@@ -1,0 +1,19 @@
+//COLORS
+$lightGray: rgba(236, 236, 236, 0.116);
+$darkGray: #2c3539;
+$darkGray_Hour: #24253d;
+$darkBlue: #562fbc;
+$orange: #f4831e;
+
+
+//FONTS
+$bodyFont: 'Lato', sans-serif; 
+
+
+//FUNCTION STYLES
+
+@mixin textStyle($color, $fontSize, $lineHeight){
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+} 

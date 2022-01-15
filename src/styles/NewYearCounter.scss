@@ -1,0 +1,63 @@
+@import "./variables/variables.scss"; 
+
+.back{
+    background-color: $lightGray;
+}
+ 
+.text {
+    font-family: $bodyFont;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	letter-spacing: -2px;
+	font-weight: bold;
+    padding: 20px;
+
+    &.h1 {
+        @include textStyle($darkGray, 70px, 40px);
+    }
+
+    &.hour {
+        @include textStyle($darkGray_Hour, 65px, 35px);
+    }
+
+    &.minute {
+        @include textStyle($darkBlue, 55px, 25px);
+    }
+
+    &.seconds {
+        @include textStyle($orange, 45px, 15px);
+    }
+
+    &.miliseconds {
+        @include textStyle($darkGray, 35px, 10px);
+    }
+
+    &.date {
+        @include textStyle($darkBlue, 100px, 60px);
+    }
+}
+
+.progress {
+    height: 40px !important;
+    color: $darkGray !important;
+    background-color: black !important;
+}
+
+.progress-bar {
+    background-color: $orange !important;
+}
+.bar {
+    text-shadow:  5px;
+    font-size: 30px;
+	line-height: 60px;
+    height: 40px !important;
+}
+
+.progress2 {
+    color: $darkGray !important;
+    background-color: $lightGray !important;
+}
+
+.progress-bar2 {
+    background-color: $darkGray !important;
+}
