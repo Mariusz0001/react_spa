@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import Contact from "./components/Contact/Contact";
@@ -20,8 +20,8 @@ const Main = () => {
             <div>
                 <h1>Single Page Application</h1>
                 <ul className="header">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/stuff">About</Link></li>
+                    <li><Link to="../">Home</Link></li>
+                    <li><Link to="../stuff">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/hook">Hook test</Link></li>
                     <li><Link to="/register">Register</Link></li>
