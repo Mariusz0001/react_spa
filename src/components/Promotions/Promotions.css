@@ -1,0 +1,38 @@
+.label{
+    font-size: calc(0.75em + 1vmin);
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel {
+    display: flex;
+    flex-direction:row;
+    gap:10px;
+}
+  
+.box {
+    width: 30vw;
+    min-height: 150px;
+    border: 0.5px solid gainsboro;
+    border-radius: 1%;
+    box-shadow: 1px 5px whitesmoke;
+    padding: 2px;
+    text-align: center;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: aliceblue;
+    font-size: calc(0.8em + 1vmin);
+}
+
+.loading {
+    font-size: 1em;
+}
+
+.icon {
+    font-size: 5vw;
+}

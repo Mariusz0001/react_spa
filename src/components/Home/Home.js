@@ -1,14 +1,42 @@
-import React, {useContext} from 'react';
+import React, {useContext, useLayoutEffect, useRef} from 'react';
+import { gsap } from "gsap";
 import { UserContext } from '../../context/UserContext';
+
+import Promotions from '../Promotions/Promotions';
+
 import './Home.css';
 
 const Home = () => {
 
-  const {user, setUser} = useContext(UserContext);
+  const { user } = useContext(UserContext);
+  const welcome = useRef();
+
+  useLayoutEffect(() => {
+    debugger;
+    if (!welcome.current) return;
+    const chars = SplitTextToChars(welcome.current);
+
+    gsap.set(welcome.current, { perspective: 400 });
+
+    gsap.from(
+      chars,
+      {
+        duration: 0.2,
+        opacity: 0,
+        scale: 1,
+        y: -40,
+        rotationX: -90,
+        transformOrigin: "0% 50% -50",
+        ease: "inOut",
+        stagger: 0.025
+      },
+      "+=0"
+    );
+  }, [user]);
 
   return (
-    <div>
-      <h2>Welcome {user}!</h2>
+    <>
+      <h2 ref={welcome}>Welcome {user}!</h2>
       <p>
         If you'd like to automate the inclusion of import React from 'react' for all files that use jsx syntax, install the react-require babel plugin:
 
@@ -23,8 +51,28 @@ const Home = () => {
         W momencie gdy chcemy wyświetlić podstronę np /contact klient nie komunikuje się z serwerem,
         tylko we własnym zakresie zmienia kontent (update DOM)
       </p>
-    </div>
+      <Promotions/>
+    </>
   );
+}
+
+function SplitTextToChars(textNode) {
+  const textContent = textNode.textContent;
+  const textSplit = textContent.split("");
+
+  const frag = document.createDocumentFragment();
+  textSplit.forEach((letter, i) => {
+    const span = document.createElement("span");
+    span.textContent = letter;
+    span.style = `${letter === " " ? "min-width: 1rem;" : ""}z-index: ${
+      textSplit.length - i
+    }; position: relative; display: inline-block;`;
+    frag.appendChild(span);
+  });
+  textNode.textContent = "";
+  textNode.appendChild(frag);
+
+  return textNode.children;
 }
 
 export default Home;
