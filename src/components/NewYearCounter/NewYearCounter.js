@@ -165,7 +165,7 @@ function NewYearCounter() {
             </div>
             <hr></hr>
             <div className="form-group">
-                <div className="text h1">Do {NEXT_YEAR} roku pozostało jeszcze:</div>
+                <div className="text h2">Do {NEXT_YEAR} roku pozostało jeszcze:</div>
                 <div className="d-flex align-items-center">
                     {getRemainTimeRender(remainHours, "godzin", "text hour")}
                     {getRemainTimeRender(remainMinutes, "minut", "text minute")}

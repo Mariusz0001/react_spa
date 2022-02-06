@@ -13,37 +13,43 @@
 
 .text.h1 {
   color: #2c3539;
-  font-size: 70px;
+  font-size: calc(3em + 1vmin);
+  line-height: 40px;
+}
+
+.text.h2 {
+  color: #2c3539;
+  font-size: calc(2em + 1vmin);
   line-height: 40px;
 }
 
 .text.hour {
   color: #24253d;
-  font-size: 65px;
+  font-size: calc(2em + 1vmin);
   line-height: 35px;
 }
 
 .text.minute {
   color: #562fbc;
-  font-size: 55px;
+  font-size: calc(2em + 1vmin);
   line-height: 25px;
 }
 
 .text.seconds {
-  color: #cdf41e;
-  font-size: 45px;
+  color: #f4831e;
+  font-size: calc(2em + 1vmin);
   line-height: 15px;
 }
 
 .text.miliseconds {
   color: #2c3539;
-  font-size: 35px;
+  font-size: calc(2em + 1vmin) px;
   line-height: 10px;
 }
 
 .text.date {
   color: #562fbc;
-  font-size: 100px;
+  font-size: calc(4em + 1vmin);
   line-height: 60px;
 }
 
@@ -54,12 +60,12 @@
 }
 
 .progress-bar {
-  background-color: #cdf41e !important;
+  background-color: #f4831e !important;
 }
 
 .bar {
   text-shadow: 5px;
-  font-size: 30px;
+  font-size: calc(1em + 1vmin);
   line-height: 60px;
   height: 40px !important;
 }

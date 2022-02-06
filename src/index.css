@@ -5,27 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px;
   background-color: #FFCC00;
-}
-
-ul.header li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-}
-
-ul.header {
-  background-color: #111;
-  padding: 0;
-}
-
-ul.header li a {
-  color: #FFF;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 20px;
-  display: inline-block;
 }
 
 .content {
@@ -40,4 +20,32 @@ ul.header li a {
 
 .content li{
   margin-bottom: 10px;
+}
+
+
+.navbar a {
+  padding-left: 20px;
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+.navbar-expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40vw;
+  min-height: 20vh;
+  position: absolute;
+  margin-top: 290px;
+  float: right;
+  right: 0px;
+  background-color: #c9c9c9;
+  border: 1px #c9c9c9;
+  border-bottom-left-radius: 5%;
+}    
+
+
+body {
+  margin: 0%;
+  padding: 0%;
 }

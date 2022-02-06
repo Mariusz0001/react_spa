@@ -1,0 +1,27 @@
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+.section:nth-of-type(odd) {
+    background-color: #eee;
+  }
+  
+.bg-image {
+    width: 100% !important;
+    z-index: -200;
+    
+    position:relative;
+}
+
+.top {
+    margin-top: -50px;
+}

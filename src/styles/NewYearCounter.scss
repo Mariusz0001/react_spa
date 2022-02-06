@@ -13,27 +13,31 @@
     padding: 20px;
 
     &.h1 {
-        @include textStyle($darkGray, 70px, 40px);
+        @include textStyle($darkGray, calc(3em + 1vmin), 40px);
+    }
+
+    &.h2 {
+        @include textStyle($darkGray, calc(2em + 1vmin), 40px);
     }
 
     &.hour {
-        @include textStyle($darkGray_Hour, 65px, 35px);
+        @include textStyle($darkGray_Hour, calc(2em + 1vmin), 35px);
     }
 
     &.minute {
-        @include textStyle($darkBlue, 55px, 25px);
+        @include textStyle($darkBlue, calc(2em + 1vmin), 25px);
     }
 
     &.seconds {
-        @include textStyle($orange, 45px, 15px);
+        @include textStyle($orange, calc(2em + 1vmin), 15px);
     }
 
     &.miliseconds {
-        @include textStyle($darkGray, 35px, 10px);
+        @include textStyle($darkGray, calc(2em + 1vmin)px, 10px);
     }
 
     &.date {
-        @include textStyle($darkBlue, 100px, 60px);
+        @include textStyle($darkBlue, calc(4em + 1vmin), 60px);
     }
 }
 
@@ -48,7 +52,7 @@
 }
 .bar {
     text-shadow:  5px;
-    font-size: 30px;
+    font-size: calc(1em + 1vmin);
 	line-height: 60px;
     height: 40px !important;
 }
