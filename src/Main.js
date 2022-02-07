@@ -12,7 +12,7 @@ import NewYearCounter from "./components/NewYearCounter/NewYearCounter";
 import { UserContext } from "./context/UserContext";
 
 const Main = () => {
-    const [user, setUser] = useState("");
+    const [user, setUser] = useState("Guest");
     const [expanded, setExpanded] = useState(false);
 
     const show = expanded ? 'show navbar-expanded bg-light' : '';
