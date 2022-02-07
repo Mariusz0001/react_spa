@@ -7,32 +7,34 @@
   
 .box {
     width: 30vw;
-    min-height: 20vh;
+    min-height: 25vh;
     border: 0.5px solid gainsboro;
     border-radius: 1%;
-    box-shadow: 1px 5px whitesmoke;
-    padding: 2px;
     text-align: center;
-    transition: .2s ease-in-out;
-    cursor: pointer;
 }
 
-.box:hover {
-    background-color: aliceblue;
-    font-size: larger;
-}
 
 .label{
-    font-size: calc(0.75em + 1vmin);
+    font-size: calc(0.8em + 1vmin);
+    font-weight: 500;
+    color: rgb(71, 71, 71);
     font-family: "Roboto", sans-serif;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.box-label {
-    min-height: 10vh;   
+.box-icon {
+    font-size: 50px;
+    height: 60%;
 }
 
-.icon {
-    font-size: 5vw;
+.box-label {
+    height: 40%;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }

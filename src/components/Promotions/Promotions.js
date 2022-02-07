@@ -5,7 +5,9 @@ import './Promotions.css';
 const Box = (props) => {
   return (
     <div className="box">
-      <i className={`${props.icon} icon`}></i>
+      <div className="box-icon">
+        <i className={`${props.icon} icon`}></i>
+      </div>
       <div className="box-label">
         <p className="label">{props.text}</p>
       </div>
