@@ -7,7 +7,7 @@ import '../../styles/NewYearCounter.css';
 function NewYearCounter() {
 
     const YEAR_SECONDS = 31556926;
-    const NEXT_YEAR = 2023;
+    const NEXT_YEAR = new Date().getFullYear()+1;
 
     const [remainSeconds, setRemainTime] = useState(9999999999);
 
@@ -22,8 +22,6 @@ function NewYearCounter() {
     let progressBar2 = React.createRef();
     
     useEffect(() => {
-        console.log("I have been mounted")
-
         if(countSeconds < 0)
             setCountSecond(remainSecond);
       }, [])
@@ -84,8 +82,8 @@ function NewYearCounter() {
 
         if(percentage !== null && progressBar?.current !== null)
         {
-            progressBar.current.style.width = percentage.toFixed(5) + "%";
-            progressBar.current.innerHTML = percentage.toFixed(5) + "%";
+            progressBar.current.style.width = percentage.toFixed(2) + "%";
+            progressBar.current.innerHTML = percentage.toFixed(2) + "%";
         }
 
         if(percentage2 !== null && progressBar2?.current !== null)
