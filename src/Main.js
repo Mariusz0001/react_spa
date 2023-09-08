@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import {Route, HashRouter as Router } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 import Contact from "./components/Contact/Contact";
@@ -18,7 +18,7 @@ const Main = () => {
     const show = expanded ? 'show navbar-expanded bg-light' : '';
 
     return (
-        <Router>
+        <Router baseline="/">
             <>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <a className="navbar-brand" href="#">Navbar</a>
