@@ -51,7 +51,7 @@ const Main = () => {
                 <div>
                     <UserContext.Provider value={{ user, setUser }}>
                         <Routes>
-                            <Route exact path="/" element={<Home />} />
+                            <Route exact path="/react-spa" element={<Home />} />
                             <Route path="/stuff" element={<Stuff />} />
                             <Route path="/contact" element={<Contact />} />
                             <Route path="/hook" element={<HookTest />} />
