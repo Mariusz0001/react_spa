@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <>
       <div id="section1" className="section-img">
-        <img src={process.env.PUBLIC_URL + '/b1.png'} className="bg-image" />
+       {/* <img src={process.env.PUBLIC_URL + '/b1.png'} className="bg-image" /> */ }
       </div>
       <div id="section1" className="section">
         <div className="text-content">
